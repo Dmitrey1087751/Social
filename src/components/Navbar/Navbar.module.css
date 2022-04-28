@@ -2,6 +2,7 @@
     grid-area: n;
     background-color:rgb(130, 100, 237);
     text-align: center;
+    padding: 20px;
 
   }
 
@@ -9,6 +10,11 @@
     font-size: 30px;
     color:aliceblue;
   }
-  .item.active {
-    color:gold
+
+  .nav a {
+    color:white;
+    text-decoration: none;
   }
+a.active {
+  color:gold;
+}
