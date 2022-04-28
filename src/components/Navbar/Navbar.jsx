@@ -4,10 +4,10 @@ function Navbar() {
     return (
         <nav className={style.nav}>
             <div className={`${style.item} ${style.active}`}>
-                <a href="google.com">Profile</a>
+                <a href="/Profile">Profile</a>
             </div>
             <div className={style.item}>
-                <a  href="google.com">Messages</a>
+                <a  href="/Messages">Messages</a>
             </div>
             <div className={style.item}>
                 <a  href="google.com">News</a>
