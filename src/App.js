@@ -5,6 +5,9 @@ import Messages from './components/Messages/Messages';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import News from './components/Profile/News/News';
+import Music from './components/Music/Music';
+import Settings from './components/Settings/Settings';
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
           <Routes>
             <Route path='/Profile' element={<Profile/>}></Route>
             <Route path='/Messages' element={<Messages/>}></Route>
+            <Route path='/News' element={<News/>}></Route>
+            <Route path='/Music' element={<Music/>}></Route>
+            <Route path='/Settings' element={<Settings/>}></Route>
           </Routes>
         </div>
       </div>
