@@ -10,7 +10,7 @@ function Navbar() {
                 <NavLink to="/Profile"  className = { navData => navData.isActive ? style.active : style.item } >Profile</NavLink>
             </div>
             <div className={style.item}>
-                <NavLink  to="/Messages"  className = { navData => navData.isActive ? style.active : style.item }>Messages</NavLink>
+                <NavLink  to="/Messager"  className = { navData => navData.isActive ? style.active : style.item }>Messager</NavLink>
             </div>
             <div className={style.item}>
                 <NavLink  to="/News"  className = { navData => navData.isActive ? style.active : style.item }>News</NavLink>
