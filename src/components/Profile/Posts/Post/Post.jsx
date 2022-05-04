@@ -9,6 +9,7 @@ function Post(props) {
       <div className={style.post} >
         <img className="img" src="https://media.nu.nl/m/6p3x7rvarl63_xwd1280.jpg/ava-max-zou-liegen-als-ik-zei-dat-mijn-album-niet-beetje-als-wraak-voelt.jpg" alt="logo"></img>
        {props.message}
+       <div>Likes {props.likesCounter}</div>
       </div>
     
   )
