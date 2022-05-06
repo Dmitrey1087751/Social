@@ -3,7 +3,7 @@ import style from './Post.module.css'
 
 function Post(props) {
 
-    console.log(props.message);
+  
   return (
     
       <div className={style.post} >
