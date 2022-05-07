@@ -10,7 +10,8 @@ import Settings from './components/Settings/Settings';
 import Messager from './components/Messager/Messager';
 
 
-function App() {
+function App(props) {
+  console.log(props.dialogs)
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -19,7 +20,7 @@ function App() {
         <div className='app-wrapper-content'>
           <Routes>
             <Route path='/Profile' element={<Profile/>}></Route>
-            <Route path='/Messager' element={<Messager/>}></Route>
+            <Route path='/Messager' element={<Messager props={props.dialogs}/>}></Route>
             <Route path='/News' element={<News/>}></Route>
             <Route path='/Music' element={<Music/>}></Route>
             <Route path='/Settings' element={<Settings/>}></Route>
