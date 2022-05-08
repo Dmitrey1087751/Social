@@ -13,16 +13,18 @@ import Messager from './components/Messager/Messager';
 
 
 function App(props) {
-  console.log(props.dialogs)
+  
   return (
+  
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navbar />
         <div className='app-wrapper-content'>
           <Routes>
-            <Route path='/Profile' element={<Profile postsData={props.postsData}/>}></Route>
-            <Route path='/Messager' element={<Messager dialogsData={props.dialogsData} messagesData={props.messagesData}/>}></Route>
+            <Route path='/Profile' element={<Profile postsData={props.state.profilePage.postsData}/>}></Route>
+            <Route path='/Messager' element={<Messager dialogsData={props.state.messager.dialogsData} 
+            messagesData={props.state.messager.messagesData}/>}></Route>
             <Route path='/News' element={<News/>}></Route>
             <Route path='/Music' element={<Music/>}></Route>
             <Route path='/Settings' element={<Settings/>}></Route>
