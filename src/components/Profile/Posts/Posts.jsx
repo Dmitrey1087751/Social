@@ -12,17 +12,14 @@ function Posts(props) {
 
   let newPost = React.useRef();
 
-  let postText = "tratata";
-  // let postText = newPost.current.value;
-  
-
   let sendPost = () => {
+    let postText = newPost.current.value;
     alert(postText);
   }
 
   return (
     <div>
-      <textarea  ref={newPost} ></textarea>
+      <input ref={newPost}></input>
       <button onClick={sendPost}>Send</button>
       {posts}
     </div>
