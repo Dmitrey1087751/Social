@@ -14,7 +14,7 @@ function Posts(props) {
 
   let sendPost = () => {
     let postText = newPost.current.value;
-    alert(postText);
+    props.addPost(postText);
   }
 
   return (

@@ -24,7 +24,7 @@
       }
 
   }
-
+ 
 export let addPost = (message) => {
   let newPost = {
     id: 5,
