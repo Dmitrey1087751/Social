@@ -11,7 +11,6 @@ import Messager from './components/Messager/Messager';
 
 
 
-
 function App(props) {
   
   return (
@@ -33,6 +32,9 @@ function App(props) {
       </div>
     </BrowserRouter>
   );
+  
 }
+
+
 
 export default App;
