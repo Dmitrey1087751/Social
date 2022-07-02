@@ -3,9 +3,9 @@ import RenderEntireTree from '../Render';
   let state = {
       profilePage: {
           postsData: [
-            { id: 1, maessage: "sadjnjaiijikcnjjxxjiij", likesCounter: 5 },
-            { id: 2, maessage: "sadjnjaiiji k cnjj   xxjiij", likesCounter: 4 },
-            { id: 3, maessage: "вс высфывс sadjnjaiijikcnjjxxjiij", likesCounter: 2 }
+            { id: 1, message: "sadjnjaiijikcnjjxxjiij", likesCounter: 5 },
+            { id: 2, message: "sadjnjaiiji k cnjj   xxjiij", likesCounter: 4 },
+            { id: 3, message: "вс высфывс sadjnjaiijikcnjjxxjiij", likesCounter: 2 }
           ]
       },
       messager:{
@@ -27,6 +27,7 @@ import RenderEntireTree from '../Render';
   }
  
 export let addPost = (message) => {
+  
   let newPost = {
     id: 5,
     message: message,
