@@ -35,6 +35,6 @@ export let addPost = (message) => {
     
   }
   state.profilePage.postsData.push(newPost);
-  RenderEntireTree();
+  RenderEntireTree(state);
 }
   export default state
