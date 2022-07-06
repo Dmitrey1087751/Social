@@ -10,19 +10,27 @@ function Posts(props) {
 
   
   let newPost = React.useRef();
+  
   let sendPost = () => {
     let postText = newPost.current.value;
     props.addPost(postText);
+    props.updateNewPostText("");
+
   }
+
+  let onPostTextChange = () => {
+    let postText = newPost.current.value;
+  props.updateNewPostText(postText);
+  };
   
   return (
     <div>
-      <input ref={newPost}></input>
+      <input ref={newPost} onChange={onPostTextChange} value={props.newPostText}/> 
       <button onClick={sendPost}>Send</button>
       {posts}
     </div>
   )
-
+ 
 }
 
 export default Posts;

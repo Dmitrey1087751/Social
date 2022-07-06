@@ -6,7 +6,8 @@ import RenderEntireTree from '../Render';
             { id: 1, message: "sadjnjaiijikcnjjxxjiij", likesCounter: 5 },
             { id: 2, message: "sadjnjaiiji k cnjj   xxjiij", likesCounter: 4 },
             { id: 3, message: "вс высфывс sadjnjaiijikcnjjxxjiij", likesCounter: 2 }
-          ]
+          ],
+          newPostText: "Some text"
       },
       messager:{
           messagesData: [
@@ -36,5 +37,12 @@ export let addPost = (message) => {
   }
   state.profilePage.postsData.push(newPost);
   RenderEntireTree(state);
+}
+
+export let updateNewPostText = (message) => {
+  
+  state.profilePage.newPostText = message;
+  RenderEntireTree(state);
+  console.log(state.profilePage.newPostText)
 }
   export default state
