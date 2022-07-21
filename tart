@@ -1,0 +1,143 @@
+[33mcommit a6beee8a094cb0de08e9d36b363203ed4d78ab33[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Wed Jul 6 18:16:56 2022 +0200
+
+    34 in prougress
+
+[33mcommit 8fe00029285576aa21ac8ebf5dfadeab398f685d[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Sat Jul 2 12:14:50 2022 +0200
+
+    fix bugs
+
+[33mcommit 07f108b30265aa8a0e33ac8f349094b85876fdc9[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Sat Jul 2 11:32:52 2022 +0200
+
+    erors were fixed
+
+[33mcommit b410ca1d1c8ec9187a145f0a8073b56e3d84049e[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Tue Jun 7 15:19:35 2022 +0200
+
+    33 готов, но почему срабатывает дебагер?
+
+[33mcommit f6f621ba825e10baef2687daa6bd6db176982113[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Sat May 28 13:37:24 2022 +0200
+
+    32 done complitly
+
+[33mcommit b437adfa5c400ca4c1a68e64ce6fb6a5e501e34c[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Thu May 19 10:20:24 2022 +0200
+
+    32 done
+
+[33mcommit 291833e9fdbd5dc7a22b37c61ea897318c1b4255[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Wed May 18 17:44:32 2022 +0200
+
+    31 done
+
+[33mcommit b76a09272ab4fbccbd17c42b14964edefac75591[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Fri May 13 18:24:52 2022 +0200
+
+    why createRef does not work?
+
+[33mcommit a1bab9010769e78b4dc6861f3f76002e753c5f5b[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Sun May 8 09:32:51 2022 +0200
+
+    29 done
+
+[33mcommit d0c6164fd6279277260d3d80972090158a130c59[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Sat May 7 19:09:20 2022 +0200
+
+    28 done
+
+[33mcommit 2ac354153dafb4e6d9dbcc95023db9e29a04e7f8[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Sat May 7 19:04:00 2022 +0200
+
+    перенес в index js лишнее испавляю
+
+[33mcommit dbcc8d728bb2726ff1fb4c7b41863b0d0cf9a70d[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Sat May 7 18:39:54 2022 +0200
+
+    postsData was removed to index.js
+
+[33mcommit 0baf5be29585ec02d7930cbba092ea517fd65c31[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Sat May 7 18:34:36 2022 +0200
+
+    переношу дату из profile в app
+
+[33mcommit 3ffe30cf90ad2b08d1162f2fd0338e1a9bee2a7c[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Fri May 6 18:12:17 2022 +0200
+
+    26 done
+
+[33mcommit 0115bf12517d31085e13929f75712b97d559734b[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Thu May 5 13:07:06 2022 +0200
+
+    25 done
+
+[33mcommit bf6554345b207994513d47a0a0ad861337276c24[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Wed May 4 09:15:39 2022 +0200
+
+    24 done
+
+[33mcommit 95b582948428678a8bcde7d87104b56415f06f95[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Tue May 3 18:05:35 2022 +0200
+
+    23 done
+
+[33mcommit 4ef479bb450ea609b84ec6567c226b7b9dca1bc2[m
+Author: Dmitrey Zadonskey <dmitrey.zadonskey@gmail.com>
+Date:   Sat Apr 30 12:31:53 2022 +0200
+
+    22 done
+
+[33mcommit 3df0552c8020b6c98dd05150f06846a8d24c3356[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Fri Apr 29 16:03:30 2022 +0200
+
+    Lesson 20 done
+
+[33mcommit 63133523dafc0132527c02f603e465da1de6f595[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Thu Apr 28 18:36:43 2022 +0200
+
+    20 in prougress. No active links
+
+[33mcommit efe4b1f35f5ab0724e7851c100fe76f657ee06ee[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Thu Apr 28 17:54:39 2022 +0200
+
+    lesson 19 done
+
+[33mcommit 8b9222aa4f71285593445c7bb464bf2cd745764e[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Thu Apr 28 14:53:55 2022 +0200
+
+    Lesson 18 done
+
+[33mcommit 251b8948c54a86f97a6de3d68cc53ad94d283236[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Thu Apr 28 11:36:56 2022 +0200
+
+    Lesson 16 done
+
+[33mcommit bedec8bc0a08d7cd134b1cbdd951dacf95a120dd[m
+Author: Dmitrey1087751 <dmitrey.zadonskey@gmail.com>
+Date:   Thu Apr 28 10:36:44 2022 +0200
+
+    Initialize project using Create React App
