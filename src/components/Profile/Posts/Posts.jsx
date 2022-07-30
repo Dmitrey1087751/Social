@@ -13,15 +13,15 @@ function Posts(props) {
   
   let sendPost = () => {
     let postText = newPost.current.value;
-    props.addPost(postText);
-    props.updateNewPostText("");
+    props.dispatch({type: 'ADD-POST', message: postText});
+    props.dispatch({type: "UPDATE-NEW-POST-TEXT", message: ""})
 
   }
 
   let onPostTextChange = () => {
     let postText = newPost.current.value;
-  props.updateNewPostText(postText);
-  };
+  props.dispatch({type: "UPDATE-NEW-POST-TEXT", message: postText})};
+  
   
   return (
     <div>
@@ -31,6 +31,6 @@ function Posts(props) {
     </div>
   )
  
-}
+};
 
 export default Posts;
