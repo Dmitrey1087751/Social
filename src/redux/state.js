@@ -1,4 +1,5 @@
 
+
 let store = {
 
   _state: {
@@ -58,5 +59,13 @@ let store = {
 
 }
 
+export const AddPostActionCreator = (postText) => {
+  return  {type: "ADD-POST",
+           message: postText}
+}
 
+export const UpdateNewPostTextCreator = (postText) => {
+  return {type:"UPDATE-NEW-POST-TEXT",
+          message: postText}
+}
 export default store
