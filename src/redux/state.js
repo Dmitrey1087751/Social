@@ -1,4 +1,7 @@
 
+const addPost = "ADD-POST"
+const updateNewPostText = "UPDATE-NEW-POST-TEXT"
+
 
 let store = {
 
@@ -40,7 +43,7 @@ let store = {
     this._renderEntireTree = observer
   },
   dispatch(action) {
-    if (action.type === 'ADD-POST') {
+    if (action.type === addPost) {
       let newPost = {
         id: 5,
         message: action.message,
@@ -50,7 +53,7 @@ let store = {
       this._state.profilePage.postsData.push(newPost);
       this._renderEntireTree(store._state);
 
-    } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+    } else if (action.type === updateNewPostText) {
       this._state.profilePage.newPostText = action.message;
       this._renderEntireTree(store._state);
 
