@@ -12,6 +12,14 @@ let Messager = (props) => {
     )
 
     let messages = props.messagesData.map(message => <Message id={message.id} text={message.text} />)
+
+    let onInputChange = ()=> {
+
+    }
+
+    let onSendButtonCkick = ()=> {
+
+    }
     return (
         <div className={style.wrapper}>
             <div className="dialogs">
@@ -20,6 +28,10 @@ let Messager = (props) => {
             </div>
             <div className="mesages">
                 {messages}
+                <div>
+                    <input onChange={ onInputChange } ptype="text" />
+                    <button onClick={ onSendButtonCkick }>Send</button>
+                </div>
             </div>
         </div>
     )
