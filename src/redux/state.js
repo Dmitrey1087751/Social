@@ -1,4 +1,4 @@
-import { Action } from "history"
+
 
 const addPost = "ADD-POST"
 const updateNewPostText = "UPDATE-NEW-POST-TEXT"
@@ -82,12 +82,16 @@ export const AddPostActionCreator = (postText) => {
            message: postText}
 }
 
-export const UpdateNewPostTextCreator = (postText) => {
+export const UpdateNewPostTextCreator = (postText) => { 
   return {type:"UPDATE-NEW-POST-TEXT",
           message: postText}
 }
-export const newMessageBodyCreator = (action.Text) => {
+export const newMessageBodyCreator = (Text) => {
   return {type:newMessageBody,
-          message: action.Text}
+          message: Text}
+}
+export const sendNewMessageCreator = () => {
+return  {type: sendNewMessage,
+}
 }
 export default store

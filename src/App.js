@@ -12,7 +12,7 @@ import Messager from './components/Messager/Messager';
 
 
 function App(props) {
-  
+ 
   return (
   
     <BrowserRouter>
@@ -24,7 +24,7 @@ function App(props) {
             <Route path='/Profile' element={<Profile postsData={props.state.profilePage.postsData} 
             dispatch={props.dispatch}
             newPostText={props.state.profilePage.newPostText}/>}></Route>
-            <Route path='/Messager' element={<Messager dialogsData={props.state.messager.dialogsData} 
+            <Route path='/Messager' element={<Messager dialogsData={props.state.messager.dialogsData} store={props.store} 
             messagesData={props.state.messager.messagesData}/>}></Route>
             <Route path='/News' element={<News/>}></Route>
             <Route path='/Music' element={<Music/>}></Route>
