@@ -62,15 +62,16 @@ let store = {
       this._renderEntireTree(store._state);
 
     }
-    else if (action.type = newMessageBody) {
+    else if (action.type == newMessageBody) {
       this._state.messager.newMessageBody = action.text;
       this._renderEntireTree(store._state);
     }
-    else if (action.type = sendNewMessage) {
+    else if (action.type == sendNewMessage) {
       let body = this._state.messager.newMessageBody;
       this._state.messager.newMessageBody = "";
-      this._state.messager.messagesData.push({ id: 6, text: body })
+      this._state.messager.messagesData.push({ id: 6, text: body });
       this._renderEntireTree(store._state);
+   
     }
 
   }
@@ -91,7 +92,7 @@ export const newMessageBodyCreator = (Text) => {
           message: Text}
 }
 export const sendNewMessageCreator = () => {
-return  {type: sendNewMessage,
+return  {type: sendNewMessage
 }
 }
 export default store

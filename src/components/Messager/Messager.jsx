@@ -25,6 +25,7 @@ let Messager = (props) => {
 
     let onSendButtonCkick = ()=> {
         props.store.dispatch(sendNewMessageCreator())
+        
 
     }
     return (
