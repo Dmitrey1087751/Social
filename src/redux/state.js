@@ -63,13 +63,14 @@ let store = {
 
     }
     else if (action.type == newMessageBody) {
-      this._state.messager.newMessageBody = action.text;
+      this._state.messager.newMessageBody = action.message;
       this._renderEntireTree(store._state);
+
     }
     else if (action.type == sendNewMessage) {
       let body = this._state.messager.newMessageBody;
       this._state.messager.newMessageBody = "";
-      this._state.messager.messagesData.push({ id: 6, text: body });
+      this._state.messager.messagesData.push({id: 6, text: body});
       this._renderEntireTree(store._state);
    
     }

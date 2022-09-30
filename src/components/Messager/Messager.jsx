@@ -18,8 +18,8 @@ let Messager = (props) => {
     let messages = props.messagesData.map(message => <Message id={message.id} text={message.text} />)
 
     let onInputChange = (e)=> {
-        let body = e.target.value
-        props.store.dispatch(newMessageBodyCreator(body))
+        let text = e.target.value
+        props.store.dispatch(newMessageBodyCreator(text))
 
     }
 
