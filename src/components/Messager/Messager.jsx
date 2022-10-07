@@ -2,8 +2,8 @@ import React from "react";
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
 import style from './Messager.module.css';
-import { newMessageBodyCreator } from "../../redux/state"
-import { sendNewMessageCreator } from "../../redux/state"
+import { newMessageBodyCreator } from "../../redux/messagerReducer"
+import { sendNewMessageCreator } from "../../redux/messagerReducer"
 
 
 

@@ -1,9 +1,5 @@
-
-
-const addPost = "ADD-POST"
-const updateNewPostText = "UPDATE-NEW-POST-TEXT"
-const newMessageBody = "NEW_MESSAGE_BODY"
-const sendNewMessage = "SEND_NEW_MESSAGE"
+import messagerReducer from "./messagerReducer"
+import profileReducer from "./profileReducer"
 
 
 let store = {
@@ -47,53 +43,13 @@ let store = {
     this._renderEntireTree = observer
   },
   dispatch(action) {
-    if (action.type === addPost) {
-      let newPost = {
-        id: 5,
-        message: action.message,
-        likesCounter: 12
-
-      }
-      this._state.profilePage.postsData.push(newPost);
-      this._renderEntireTree(store._state);
-
-    } else if (action.type === updateNewPostText) {
-      this._state.profilePage.newPostText = action.message;
-      this._renderEntireTree(store._state);
-
-    }
-    else if (action.type == newMessageBody) {
-      this._state.messager.newMessageBody = action.message;
-      this._renderEntireTree(store._state);
-
-    }
-    else if (action.type == sendNewMessage) {
-      let body = this._state.messager.newMessageBody;
-      this._state.messager.newMessageBody = "";
-      this._state.messager.messagesData.push({id: 6, text: body});
-      this._renderEntireTree(store._state);
-   
-    }
+    this._state.profilePage = profileReducer(this._state.profilePage, action)
+    this._state.messager = messagerReducer(this._state.messager, action)
+    this._renderEntireTree(store._state);
 
   }
 
 }
 
-export const AddPostActionCreator = (postText) => {
-  return  {type: "ADD-POST",
-           message: postText}
-}
 
-export const UpdateNewPostTextCreator = (postText) => { 
-  return {type:"UPDATE-NEW-POST-TEXT",
-          message: postText}
-}
-export const newMessageBodyCreator = (Text) => {
-  return {type:newMessageBody,
-          message: Text}
-}
-export const sendNewMessageCreator = () => {
-return  {type: sendNewMessage
-}
-}
 export default store
