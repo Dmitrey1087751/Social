@@ -1,8 +1,5 @@
 import React from "react";
 import Post from "./Post/Post";
-import { AddPostActionCreator } from "../../../redux/profileReducer";
-import { UpdateNewPostTextCreator } from "../../../redux/profileReducer";
-
 
 
 
@@ -10,29 +7,28 @@ function Posts(props) {
 
   let posts = props.postsData.map(post => <Post id={post.id} message={post.message} likesCounter={post.likesCounter} />)
 
-  
   let newPost = React.useRef();
-  
-  let sendPost = () => {
+
+  let onSendPost = () => {
     let postText = newPost.current.value;
-    props.dispatch(AddPostActionCreator(postText));
-    props.dispatch(UpdateNewPostTextCreator(""))
+    props.sendPost(postText);
 
   }
 
   let onPostTextChange = () => {
     let postText = newPost.current.value;
-  props.dispatch(UpdateNewPostTextCreator(postText))};
-  
-  
+    props.updateNewPostText(postText)
+  };
+
+
   return (
     <div>
-      <input ref={newPost} onChange={onPostTextChange} value={props.newPostText}/> 
-      <button onClick={sendPost}>Send</button>
+      <input ref={newPost} onChange={onPostTextChange} value={props.newPostText} />
+      <button onClick={onSendPost}>Send</button>
       {posts}
     </div>
   )
- 
+
 };
 
 export default Posts;

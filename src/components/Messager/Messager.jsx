@@ -2,14 +2,12 @@ import React from "react";
 import Dialog from "./Dialog/Dialog";
 import Message from "./Message/Message";
 import style from './Messager.module.css';
-import { newMessageBodyCreator } from "../../redux/messagerReducer"
-import { sendNewMessageCreator } from "../../redux/messagerReducer"
+
 
 
 
 let Messager = (props) => {
     
-    let state = props.store.getState()
     
     let dialogs = props.dialogsData.map(dialog =>
         <Dialog id={dialog.id} name={dialog.Name} />
@@ -19,15 +17,15 @@ let Messager = (props) => {
 
     let onInputChange = (e)=> {
         let text = e.target.value
-        props.store.dispatch(newMessageBodyCreator(text))
+        props.inputChanger(text)
 
     }
 
     let onSendButtonCkick = ()=> {
-        props.store.dispatch(sendNewMessageCreator())
-        
-
+        props.sendMessage()
+    
     }
+    
     return (
         <div className={style.wrapper}>
             <div className="dialogs">
@@ -37,7 +35,7 @@ let Messager = (props) => {
             <div className="mesages">
                 {messages}
                 <div>
-                    <input onChange={ onInputChange } value={state.messager.newMessageBody} />
+                    <input onChange={ onInputChange } value={props.newMessageBody} />
                     <button onClick={ onSendButtonCkick }>Send</button>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Posts from "./Posts/Posts";
+import PostsContainer from "./Posts/PostsContainer";
 import style from './Profile.module.css'
 
 function Profile(props) {
@@ -10,8 +10,8 @@ function Profile(props) {
       <img src='https://tinypng.com/images/social/website.jpg' alt="img"></img>
       <div>ava + descr</div>
       <div>My Posts</div>
-      <Posts postsData={props.postsData} 
-      dispatch={props.dispatch}
+      <PostsContainer postsData={props.postsData} 
+      dispatch={props.dispatch} state={props.state}
       newPostText={props.newPostText}/>
     </div>
   )
