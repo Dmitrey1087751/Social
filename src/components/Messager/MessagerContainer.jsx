@@ -1,30 +1,51 @@
 import React from "react";
-import { newMessageBodyCreator } from "../../redux/messagerReducer"
-import { sendNewMessageCreator } from "../../redux/messagerReducer"
-import Messager from "./Messager"
+import { connect } from "react-redux";
+import { newMessageBodyCreator } from "../../redux/messagerReducer";
+import { sendNewMessageCreator } from "../../redux/messagerReducer";
+import Messager from "./Messager";
 
+// let MessagerContainer = (props) => {
+//   let state = props.store.getState();
+//   let newMessageBody = state.messager.newMessageBody;
 
+//   let inputChanger = (text) => {
+//     props.store.dispatch(newMessageBodyCreator(text));
+//   };
 
-let MessagerContainer = (props) => {
-    
-    let state = props.store.getState()
-    let newMessageBody = state.messager.newMessageBody
+//   let sendMessage = () => {
+//     props.store.dispatch(sendNewMessageCreator());
+//   };
+//   return (
+//     <Messager
+//       dialogsData={props.dialogsData}
+//       messagesData={props.messagesData}
+//       newMessageBody={newMessageBody}
+//       inputChanger={inputChanger}
+//       sendMessage={sendMessage}
+//     />
+//   );
+// };
 
+const mapStateToProps = (state) => {
+  return {
+    dialogsData: state.messager.dialogsData,
+    messagesData: state.messager.messagesData,
+    newMessageBody: state.messager.newMessageBody
+  };
+};
 
-    let inputChanger = (text)=> {
-        props.store.dispatch(newMessageBodyCreator(text))
+const mapDispatchToProps = (dispatch) => {
+  return {
+    newMessageBody: () => {},
+    inputChanger: (text) => {
+      dispatch(newMessageBodyCreator(text));
+    },
+    sendMessage: () => {
+      dispatch(sendNewMessageCreator());
+    },
+  };
+};
 
-    }
+const MessagerContainer = connect(mapStateToProps,mapDispatchToProps) (Messager);
 
-    let sendMessage = ()=> {
-        props.store.dispatch(sendNewMessageCreator())
-        
-
-    }
-    return (
-        <Messager dialogsData={props.dialogsData} messagesData={props.messagesData} 
-        newMessageBody={newMessageBody} inputChanger={inputChanger} sendMessage={sendMessage} />
-    )
-}
-
-export default MessagerContainer
+export default MessagerContainer;
