@@ -18,12 +18,18 @@ let profileReducer = (state = initialState, action) => {
         message: action.message,
         likesCounter: 12
       }
-      state.postsData.push(newPost);
-      return state;
+      let stateCopy = {...state};
+      stateCopy.postsData = [...state.postsData];
+
+      stateCopy.postsData.push(newPost);
+      return stateCopy;
     }
+  
     case updateNewPostText : {
-      state.newPostText = action.message;
-      return state;
+      let stateCopy = {...state}
+
+      stateCopy.newPostText = action.message;
+      return stateCopy;
     }
     default: return state;
   }

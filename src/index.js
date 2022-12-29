@@ -6,7 +6,7 @@ import App from './App';
 import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let RenderEntireTree = (state) => {
+
 
 
   root.render(
@@ -16,9 +16,7 @@ let RenderEntireTree = (state) => {
       </Provider>
     </React.StrictMode>
   );
-}
-RenderEntireTree(store.getState());
 
-store.subscribe(RenderEntireTree);
-export default RenderEntireTree
+
+
 
