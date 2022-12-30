@@ -18,10 +18,8 @@ let profileReducer = (state = initialState, action) => {
         message: action.message,
         likesCounter: 12
       }
-      let stateCopy = {...state};
-      stateCopy.postsData = [...state.postsData];
-
-      stateCopy.postsData.push(newPost);
+      let stateCopy = {...state,
+      postsData:[...state.postsData,newPost] };
       return stateCopy;
     }
   
