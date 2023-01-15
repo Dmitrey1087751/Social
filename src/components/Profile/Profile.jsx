@@ -2,12 +2,14 @@ import React from "react";
 import PostsContainer from "./Posts/PostsContainer";
 import style from './Profile.module.css'
 
+
 function Profile(props) {
 
-
+  // <img src='https://tinypng.com/images/social/website.jpg' alt="img"></img> 
   return (
     <div className={style.content}>
-      <img src='https://tinypng.com/images/social/website.jpg' alt="img"></img>
+        <img src='https://tinypng.com/images/social/website.jpg' alt="img"></img> 
+
       <div>ava + descr</div>
       <div>My Posts</div>
       <PostsContainer postsData={props.postsData} 
